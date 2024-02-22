@@ -1,0 +1,138 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="calculator_style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;600&family=Montserrat:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Kostya Kozub</title>
+</head>
+<body>
+    <div class="app">
+        <nav class="navbar">
+            <div class="navbar-container container">
+                <input type="checkbox" name="" id="">
+                <div class="hamburger-lines">
+                    <span class="line line1"></span>
+                    <span class="line line2"></span>
+                    <span class="line line3"></span>
+                </div>
+                <ul class="menu-items">
+                    <li><a class="nav__link" href="/pages/calculator.html">Калькулятор</a></li>
+                    <li><a class="nav__link" href="/pages/password_generation.html">Генерація пароля</a></li>
+                    <li><a class="nav__link" href="/pages/count_vowels.html">Порахувати голосні</a></li>
+                    <li><a class="nav__link" href="supplices.html">Новий проект</a></li>
+                    <ul class="nav_info">
+                        <li class="nav__item">
+                            <a class="nav__link" href="https://maps.app.goo.gl/z2y1sBZHoK756AWH7" target="_blank">
+                            <address>
+                                м. Чернівці, <br />
+                                вул. Університецька, 28
+                            </address>
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="email" href="email: kozub.kostiantyn@gmail.com">
+                                kozub.kostiantyn@gmail.com
+                            </a>
+                        </li>
+                    </ul>
+                </ul>
+                <a class="log-in" href="#id01">
+                    <div class="round-image logo">
+                        <img src="/images/Kozub Kostiantyn'.png" alt="Your Image">
+                    </div>
+                </a>
+                <div id="id01" class="modal">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <header class="headr modal-container">
+                                <a href="#" class="closebtn">×</a>
+                                <h2>ПРО МЕНЕ</h2>
+                            </header>
+                            <div class="modal-container-main">
+                                <div class="round-image-modal">
+                                    <img src="/images/Kozub Kostiantyn'.png" alt="Your Image">
+                                </div>
+                                <h2>
+                                    Козуб Костянтин Миколайович
+                                </h2>
+                                <h2>
+                                    Студент ЧНУ
+                                </h2>
+                                <a class="log-in-btn" href="">НАПИСАТИ</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>  
+        </nav>
+    
+        <main>
+            <div id="calculator">
+                <h1 class="calculator-logo">Калькулятор</h1>
+                <input class="input-calculator" type="number" id="input1" placeholder="Введіть число">
+                <input class="input-calculator" type="number" id="input2" placeholder="Введіть число">
+                <div class="buttons">
+                    <button onclick="addition()">+</button>
+                    <button onclick="subtraction()">-</button>
+                    <button onclick="multiplication()">*</button>
+                    <button onclick="division()" >/</button>
+                </div>
+                <div id="output"></div>
+            </div>
+        </main>
+        <!-- <footer>
+            <div class="footer__container container">
+                <div class="order__bar">
+                    <h2 class="title">Щоб зробити замовлення вкажіть ваш номер телефону</h2>
+                    <p class="subtitle">Ми зателефонуємо вам протягом 15 хвилин</p>
+                    <div class="number__bar">
+                        <input
+                            class="number"
+                            type="number"
+                            name="phone"
+                            id="phone_number"
+                            placeholder="номер телефону"
+                        />
+                        <a class="make__order" href="">Зробити замовлення</a>
+                    </div>
+                    <div class="agreement">
+                        <input type="checkbox" name="subscribe" id="subscribe" value="yes" />
+                        <label class="agreement__text" for="subscribe"
+                            >Нажимаючи на кнопку ви погоджуєтесь з умовами обробки персональних
+                            даних</label>
+                    </div>
+                </div>
+                <ul class="nav__bar__footer">
+                    <li>
+                    <a>Умови обробки персональних даних</a>
+                    </li>
+                    <li>
+                    <a>Служба підтримки</a>
+                    </li>
+                    <li>
+                    <a>Політика конфіденціональності</a>
+                    </li>
+                </ul>
+            </div>
+        </footer> -->
+    </div>
+    <script src="Calculator_script.js"></script>
+</body>
+</html>
